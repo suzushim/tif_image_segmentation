@@ -227,8 +227,6 @@ def interface(dataname="0_1", savedirname = "NULL", first = True, direction_num=
     for f in natsorted(files):
         if((counter + diffnum + (plane_num-direction_num)) % plane_num == 0):
             print(f)
-            #registration1(f, counter, dirname)
-            #counter → f(filename)
             extract = registration1(f, counter2, dirname, pati_num=patinumber, direction_num=direction_num, ex=ex, dark = dark)
             if(counter2==1):
                 extract_list = np.array([extract])
